@@ -1,4 +1,1 @@
-/* const changeHamburgerMenuIcon = (icon) => {
-  icon.classList.toggle("change");
-};
-*/
+let navItem=document.getElementsByClassName("list-item");const validateEmail=()=>{let e=document.getElementById("newsletterInput");return!!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(e.value)||(alert("You have entered an invalid email address!"),!1)},addActiveClass=e=>{for(let e=0;e<navItem.length;e++)navItem[e].classList.remove("active");e.target.parentElement.classList.add("active")};for(let e=0;e<navItem.length;e++)navItem[e].addEventListener("click",addActiveClass);

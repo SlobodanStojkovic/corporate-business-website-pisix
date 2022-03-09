@@ -15,11 +15,11 @@
         </div>
         <nav>
           <ul>
-            <li><a class="first-link" href="#">HOME</a></li>
-            <li><a href="#">PAGES</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">CONTACTS</a></li>
+            <li class="list-item"><a class="first-link" href="#">HOME</a></li>
+            <li class="list-item"><a href="#">PAGES</a></li>
+            <li class="list-item"><a href="#">PORTFOLIO</a></li>
+            <li class="list-item"><a href="#">BLOG</a></li>
+            <li class="list-item"><a href="#">CONTACTS</a></li>
           </ul>
         </nav>
         <div class="header__container__menu-btn">
@@ -272,10 +272,17 @@
           ndae debitifacere.
         </p>
         <div class="imgs">
-          <img src="./src/images/profile-1.jpg" alt="" />
-          <img src="./src/images/profile-2.jpg" alt="" />
-          <img src="./src/images/profile-3.jpg" alt="" />
-          <img src="./src/images/profile-4.jpg" alt="" />
+          <img src="./src/images/profile-1.jpg" alt="man with glasses" />
+          <img src="./src/images/profile-2.jpg" alt="man with watch" />
+          <img src="./src/images/profile-3.jpg" alt="man with beard" />
+          <img src="./src/images/profile-4.jpg" alt="man with hat" />
+        </div>
+        <div class="slider">
+          <div class="slider-bar"></div>
+          <div class="slider-bar"></div>
+          <div class="slider-bar"></div>
+          <div class="slider-bar"></div>
+          <div class="slider-bar"></div>
         </div>
       </div>
     </section>
@@ -335,11 +342,11 @@
               </div>
             </div>
           </div>
-          <i
-            >Increased review rates have helped us grow our brands 20% year over
+          <p class="justin-opinion">
+            Increased review rates have helped us grow our brands 20% year over
             year.Perferendis repudandae fugia rchitecto beatea rederit svitae
-            recusa ndae debitifacere uiimi placeat maxienui</i
-          >
+            recusa ndae debitifacere uiimi placeat maxienui
+          </p>
           <div class="read-more">
             <a href="#"
               >READ MORE <img src="./src/images/arrow-icon.svg" alt=""
@@ -367,8 +374,12 @@
             We operate our banking services in many countries around the world.
           </p>
           <div class="email">
-            <input type="text" placeholder="Enter your email." />
-            <a href="#">Get Started</a>
+            <input
+              id="newsletterInput"
+              type="text"
+              placeholder="Enter your email."
+            />
+            <a onclick="validateEmail()" href="">Get Started</a>
           </div>
         </div>
         <div class="bottom-footer">
